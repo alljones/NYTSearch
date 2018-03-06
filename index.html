@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times - Search</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,27 +26,27 @@
                         <!-- Search Term Fill -->
                             <div class="form-group">
                                     <label for="search term">Search Term:</label>
-                                    <input type="text" class="form-control" id="searchterm" placeholder="">
+                                    <input type="text" class="form-control" id="searchterm" placeholder="" required>
                             </div>
                              <!-- Number of Records Fill -->
                             <div class="form-group">
                                     <label for="search term">Number of Records to Retrieve:</label>
                                     <select class="form-control">
-                                            <option value="1">1</option>
-                                            <option value="5">5</option>
-                                            <option value="10">10</option>
+                                            <option id="opt1" value="1">1</option>
+                                            <option id="opt5" value="5">5</option>
+                                            <option id="opt10" value="10">10</option>
 
                                            </select>
                             </div>
                              <!-- Start Year Fill -->
                             <div class="form-group">
                                     <label for="search term">Start Year (Optional):</label>
-                                    <input type="text" class="form-control" id="startyr" placeholder="">
+                                    <input type="text" class="form-control" id="startyr" placeholder="" maxlength="4">
                             </div>
                             <!-- End Year Fill -->
                             <div class="form-group">
                                     <label for="search term">End Year (Optional):</label>
-                                    <input type="text" class="form-control" id="endyr" placeholder="">
+                                    <input type="text" class="form-control" id="endyr" placeholder="" maxlength="4">
                             </div>
                             <!-- Buttons -->
                             <button class="btn btn-default" id="run-search">Search</button>
