@@ -9,12 +9,70 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center">New York Time Search</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Parameters</h3>
+                    </div>
+                    <div class="panel-body">
+                    <form action="">
+                        <!-- Search Term Fill -->
+                            <div class="form-group">
+                                    <label for="search term">Search Term:</label>
+                                    <input type="text" class="form-control" id="searchterm" placeholder="">
+                            </div>
+                             <!-- Number of Records Fill -->
+                            <div class="form-group">
+                                    <label for="search term">Number of Records to Retrieve:</label>
+                                    <select class="form-control">
+                                            <option value="1">1</option>
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+
+                                           </select>
+                            </div>
+                             <!-- Start Year Fill -->
+                            <div class="form-group">
+                                    <label for="search term">Start Year (Optional):</label>
+                                    <input type="text" class="form-control" id="startyr" placeholder="">
+                            </div>
+                            <!-- End Year Fill -->
+                            <div class="form-group">
+                                    <label for="search term">End Year (Optional):</label>
+                                    <input type="text" class="form-control" id="endyr" placeholder="">
+                            </div>
+                            <!-- Buttons -->
+                            <button class="btn btn-default" id="run-search">Search</button>
+                            <button class="btn btn-default" id="clear-all">Clear Results</button>
+                    </form>     
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Top Articles -->
+                <div class="container">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Top Articles</h3>
+                        </div>
+                        <div class="panel-body" id="top-articles"> 
+                        </div>
+                        </div>
+                </div>
+            </div>
     
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/???.js"></script>    
+<script src="assets/js/nyt.js"></script>    
 </body>
 </html>
